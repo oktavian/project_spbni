@@ -1,0 +1,615 @@
+/**************************** BEGIN ATURAN ***************************/
+body { 
+    background: url('images/bg-body.jpg');
+    font-size: 11px;
+    font-family: calibri,sans-serif;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.a_beda{
+    text-decoration: none;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.a_beda2{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+
+.a_beda2:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: hand;
+}
+
+.clear{
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.kiri{
+    float: left;
+}
+
+.kanan{
+    float: right;
+}
+
+.class_font{
+    font: bold 12px gadget, sans-serif;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: red;
+    padding: 3px 10px;
+    border-radius: 6px;
+    color: white;
+    font: bold 11px gadget,sans-serif;
+}
+
+input[type="text"],textarea, select{
+    border-radius: 6px;
+    font: bold 11px gadget,sans-serif;
+    padding: 3px;
+}
+
+h1,h3{
+    font-weight: bolder;
+    font-family: gadget,sans-serif;  
+    color:#FFFFFF;
+    box-shadow:0px 1px #E7E7E7;
+    -moz-box-shadow:0px 1px #E7E7E7;
+    -webkit-box-shadow:0px 1px #E7E7E7;       
+    text-shadow:0px 1px #4E802C;
+    border-color:#478223;
+    background:#599F2F;
+    background:-moz-linear-gradient(top,#9FE355 1px,#79BF4A 1px,#599F2F);
+    background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#9FE355),color-stop(0.02,#79BF4A),color-stop(1,#599F2F));  
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+hr{
+    margin: 50px auto;
+    border: 1px solid brown;
+}
+
+.tombol{
+    background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    font: bold 14px gadget, sans-serif;
+}
+
+
+
+.cur{
+    background: orange;
+    font: bold 14px calibri, sans-serif;
+    display: inline-block;
+    padding: 3px 5px;
+    border: 2px solid green;
+    margin: 3px;
+}
+
+
+.halaman a, .halaman_ajax a{
+    font: bold 14px calibri, sans-serif;
+    display: inline-block;
+    background:rgb(211, 214, 255);
+    padding: 3px 5px;
+    border: 1px solid black;
+
+}
+
+.ground{
+    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+    color: white;
+}
+
+.font_12{
+    font: bold 12px calibri, sans-serif;
+}
+
+.font_14{
+    font: bold 14px calibri, sans-serif;
+}
+
+.font_16{
+    font: bold 16px calibri, sans-serif;
+}
+
+.font_24{
+    font: bold 24px calibri, sans-serif;
+}
+
+.fontkhusus{
+    color: brown;
+    font: bold 16px gadget, sans-serif; 
+}
+
+.garisbawah:hover{
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ngeblur{
+    opacity:0.4;
+}
+
+.merah{
+    color :red;
+}
+
+.tr_edit{
+    height: 30px;
+    font: bold 14px calibri, sans-serif;
+}
+
+/***************************** END ATURAN ***************************/
+
+/*****************************NAVIGASI & MENU***************************/
+#header{
+    border:1px solid black;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background: wheat;
+    z-index: 2;
+}
+
+#sub_header{
+    padding:0;
+    height:30px;
+    font-size: 16px;
+    background: url('images/canvas.jpg');
+    border-bottom: 6px groove black;
+    z-index: 3;
+}
+
+#menu_utama{
+    width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+#menu_utama ul li{
+    float: left;
+    padding: 3px;
+}
+
+#menu_utama ul li a{
+    display: block;
+    background: yellowgreen;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    height: 50px;
+    width: 105px;
+    font: bold 16px gadget,sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+#menu_utama ul li a:hover{
+    display: block;
+    background: orange;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    height: 50px;
+    width: 100px;
+    font: bold 16px gadget,sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* BEGIN MENU NAVIGASI */
+#menu_navigasi{
+    float: left;
+    position: fixed;
+    width: 200px;
+    border: 3px solid green;
+    background: white; 
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#menu_navigasi h2{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(255, 168, 76) 0%, rgb(255, 123, 13) 100%) repeat scroll 0 0 transparent;
+    margin-top: 0;
+    margin-bottom: 1px;
+    cursor: pointer;
+    padding: 5px 5px 5px 7px;
+    font-weight:bold;
+    border-radius: 3px;
+}
+
+#menu_navigasi ul{
+    padding-left: 15px;
+    display: none;
+}
+
+#menu_navigasi ul li{
+    margin:15px 0;
+}
+
+.rapikan{
+    padding-left: 200px;
+}
+/* END NAVIGASI */
+/*****************************NAVIGASI & MENU***************************/
+
+
+/*****************************ISI***************************/
+#outer{
+    /*
+    position: fixed;
+    */
+    margin-top: 80px;
+    z-index: 1;
+}
+
+
+
+#isi{
+    border-radius: 10px;
+    /*background: #d5d5ff;*/
+    background: white;
+    border: 3px solid green;
+    margin-left: 210px;
+    z-index: 1;
+    padding: 10px;
+}
+/*****************************ISI***************************/
+
+
+/***************************** BEGIN FORM ***************************/
+.box_form{
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table.tbl_fm{
+    border-collapse: collapse;
+}
+table.tbl_fm tr td{
+    padding: 5px;
+}
+
+
+.tbl_fm tr:hover{
+    background:rgb(211, 214, 255);
+}
+
+.ngeblur{
+    opacity:0.4;
+}
+
+.error{
+    font: bold 11px gadget, sans-serif;
+    color: red;
+    padding: 3px;
+}
+
+.valid{
+    display: none;
+}
+/***************************** END FORM ***************************/
+
+
+
+
+/***************************** BEGIN TABEL***************************/
+/* BEGIN PEMBUATAN TABEL HEAD */
+.tbl_head{
+    font: bold 16px calibri, sans-serif;
+    padding: 0 3px;
+}
+
+.tbl_head select, .tbl_head input[type="submit"], #shwpage select, #shwpage input[type="submit"]{
+    border-radius:0;
+    border: 1px solid black;
+    color: black;
+    background: url('images/canvas.jpg');
+    padding: 3px;
+}
+
+/* END PEMBUATAN TABEL HEAD */
+/* BEGIN PEMBUATAN BOX TABEL */
+.box_tabel p{
+    font: 14px calibri,sans-serif;
+}
+
+.box_tabel h2{
+    font: bold 20px calibri,sans-serif;
+}
+
+.box_tabel table{
+    border: 1px solid green;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box_tabel table thead{
+    background: orange;
+    border: 2px solid black;
+}
+
+.box_tabel table tr th{
+    height: 50px;
+}
+
+.box_tabel table tr td{
+    padding: 3px 5px;
+}
+
+/* END PEMBUATAN BOX TABEL */
+/***************************** END TABEL ***************************/
+
+/*****************************BEGIN KETERANGAN TABEL***************************/
+.box_keterangan{
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px black;
+    background: url("images/paper.jpg");
+}
+
+.box_keterangan p.phead{
+    background: orange;
+    text-align: center;
+    padding: 15px;
+    margin-top:0px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*****************************END KETERANGAN TABEL***************************/
+/*****************************BEGIN BUKU ************************************/
+
+.outer_buku{
+    width: 750px; 
+    border:1px solid black; 
+    margin: 100px auto; 
+    text-align: center; 
+    padding: 50px;
+}
+
+.buku{
+    padding: 0;
+    margin: 0;
+}
+
+.isi_buku{
+    border:4px solid green;
+    margin: 120px auto;
+    background: white;
+    padding: 50px 10px;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.buku:hover{
+    border: 5px solid red;
+    background: white;
+    border-radius: 15px;
+}
+
+.judul_buku{
+    background: white; 
+    padding: 20px; 
+    width: 200px; 
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 35px auto;
+}
+
+.ket{
+    width: 350px;
+    margin: 20px;
+}
+
+.ket table{
+    width: 100%;
+}
+
+#bk_pinjaman{
+    border:1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bk_pinjaman thead{
+    background: orange;
+}
+
+#bk_pinjaman thead tr th{
+    height: 40px;
+}
+
+
+
+
+.box_buku h2{
+    font: bold 20px calibri, sans-serif;
+}
+
+/***************************** END BUKU ************************************/
+
+
+
+
+
+/*****************************BEGIN SPESIAL***************************/
+#buat_dftr_simpan,#buat_dftr_angsur{
+    position: absolute;
+    top: 93px;
+    left: 600px;
+}
+
+.cetak_dftr_tagih{
+    position: absolute;
+    top:95px;
+    left: 1350px;
+    padding: 0; 
+    margin-bottom: 5px;
+}
+
+#tbl_detail_anggota{
+    font: bold 8px calibri, sans-serif;
+    display: none;
+    width: 280px;
+    padding: 5px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px black;
+    
+}
+
+.dataTables_filter{
+    margin-bottom: 10px;
+}
+
+.paging_full_numbers{
+    margin-top: 10px;
+}
+
+
+#tombol_transaksi{
+    height: 50px;
+    margin-top: 40px;
+    margin-left: -110px;
+}
+
+
+#box_transaksi_simpan,#box_transaksi_angsur{
+    width:300px; 
+    margin-top: 15px;
+    display: none;
+}
+
+table#filter_daftr_tagih tbody tr:hover{
+    background: activeborder;
+}
+
+#ya,#tidak{
+    color: red;
+}
+
+#ya:hover,#tidak:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#hak{
+    font: bold 20px gadget, sans-serif;
+    margin: 300px auto;
+    width: 500px;
+    text-align: center;
+}
+
+/*****************************END SPESIAL***************************/
+/*****************************BEGIN BASIl **************************/
+#form_basil{
+    width: 1070px;
+    margin: 50px auto;
+}
+
+#tbl_basil{
+    width: 100%;
+}
+
+#tbl_basil tr th{
+    background: orange;
+}
+
+
+#hasil_basil{
+    margin: 0 auto;
+    width: 1070px;
+}
+
+#bagi{
+    text-align: right;
+    font: 14px calibri,sans-serif;
+}
+
+/*****************************END BASIl **************************/
+/*****************************BEGIN BUKU BESAR ********************/
+#gl{
+    margin-top: 30px;
+}
+
+#gl p{
+    font: bold 14px calibri,sans-serif;
+}
+
+#id_gl{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table#id_gl tr th{
+    background: orange;
+    border: 1px solid black;
+}
+
+table#id_gl tr td{
+    border: 1px solid green;
+}
+
+table#sub_gl tr#sub_tr{
+    border:none;
+}
+
+table#sub_gl tr td{
+    border:none;
+}
+
+
+/**************************** END BUKU BESAR *******************/
+/**************************** BEGIN JURNAL *******************/
+#jurnal tr td{
+    height:10px;
+}
+
+/**************************** END JURNAL *******************/
